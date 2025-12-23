@@ -7,7 +7,7 @@
     ></div>
 
     <!-- Gradient overlay -->
-    <div class="absolute inset-0 bg-linear-to-r from-blue-600 to-purple-700 opacity-80"></div>
+    <div class="absolute inset-0 bg-linear-to-r from-blue-600 to-purple-800 opacity-80"></div>
 
     <!-- Content -->
     <div class="relative z-10 max-w-3xl px-6 text-center">
