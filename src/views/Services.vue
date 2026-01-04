@@ -1,19 +1,39 @@
 <template>
-  <section class="mx-auto max-w-7xl px-6 py-20">
-    <h2 class="mb-12 text-center text-3xl font-semibold">Our Services</h2>
-
-    <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
-      <div
-        v-for="service in services"
-        :key="service.id"
-        class="rounded-xl bg-white p-6 text-center shadow transition hover:shadow-xl"
-      >
-        <img :src="service.icon" alt="" class="mx-auto mb-4 h-20 w-20"/>
-        <h3 class="mb-2 text-xl font-semibold">{{ service.title }}</h3>
-        <p class="text-gray-600">{{ service.description }}</p>
-      </div>
+  <div class="bg-gray-50 min-h-screen pt-24 pb-20">
+    <!-- Header -->
+    <div class="text-center mb-16 px-6" data-aos="fade-up">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Expertise</h1>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+        We offer a wide range of digital solutions tailored to help you succeed in a connected world.
+      </p>
     </div>
-  </section>
+
+    <!-- Services Grid -->
+    <section class="max-w-7xl mx-auto px-6">
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div
+          v-for="(service, index) in services"
+          :key="service.id"
+          class="relative overflow-hidden rounded-2xl bg-white p-8 shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:bg-gradient-to-br hover:from-white hover:to-blue-50"
+          data-aos="fade-up"
+          :data-aos-delay="index * 100"
+        >
+          <!-- Icon Background Blob -->
+          <div class="absolute -right-4 -top-4 h-24 w-24 rounded-full bg-blue-100 opacity-50 blur-2xl transition-all group-hover:bg-blue-200"></div>
+
+          <div class="relative z-10 mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-600 text-white shadow-lg">
+             <!-- Using text/emoji as placeholder icons for simplicity, but could be SVG -->
+             <span class="text-3xl">{{ service.emoji }}</span>
+          </div>
+
+          <h3 class="mb-3 text-xl font-bold text-gray-900">{{ service.title }}</h3>
+          <p class="text-gray-600 leading-relaxed">
+            {{ service.description }}
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script setup>
@@ -21,38 +41,38 @@ const services = [
   {
     id: 1,
     title: 'Website Development',
-    description: 'Responsive and modern websites for all types of businesses.',
-    icon: 'https://via.placeholder.com/80?text=Web'
+    description: 'Custom, responsive, and SEO-optimized websites designed to showcase your brand effectively.',
+    emoji: '💻'
   },
   {
     id: 2,
-    title: 'Mobile Apps',
-    description: 'Android and iOS applications to reach your audience everywhere.',
-    icon: 'https://via.placeholder.com/80?text=App'
+    title: 'Mobile App Development',
+    description: 'Native and cross-platform mobile applications for iOS and Android devices.',
+    emoji: '📱'
   },
   {
     id: 3,
     title: 'UI/UX Design',
-    description: 'Clean and intuitive designs to enhance user experience.',
-    icon: 'https://via.placeholder.com/80?text=Design'
+    description: 'Intuitive and engaging user interfaces that provide exceptional user experiences.',
+    emoji: '🎨'
   },
   {
     id: 4,
-    title: 'System Repairs',
-    description: 'Fixing and optimizing systems for maximum efficiency.',
-    icon: 'https://via.placeholder.com/80?text=Repair'
+    title: 'System Repairs & Maintenance',
+    description: 'Diagnosis, repair, and optimization of computer systems to keep your business running smoothly.',
+    emoji: '🔧'
   },
   {
     id: 5,
-    title: 'Consulting',
-    description: 'Expert advice to grow your digital presence.',
-    icon: 'https://via.placeholder.com/80?text=Consult'
+    title: 'IT Consulting',
+    description: 'Strategic advice on technology adoption and digital transformation for your business.',
+    emoji: '💡'
   },
   {
     id: 6,
     title: 'Entertainment Solutions',
-    description: 'Custom solutions for entertainment companies and events.',
-    icon: 'https://via.placeholder.com/80?text=Fun'
+    description: 'Digital setups for events, media production, and entertainment businesses.',
+    emoji: '🎮'
   }
 ]
 </script>
