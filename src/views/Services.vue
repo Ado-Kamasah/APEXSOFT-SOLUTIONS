@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-50 min-h-screen pt-24 pb-20">
+  <div class="bg-gray-50 min-h-screen pt-24 pb-20 transition-colors duration-300">
     <!-- Header -->
     <div class="text-center mb-16 px-6" data-aos="fade-up">
       <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Expertise</h1>

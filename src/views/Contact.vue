@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gray-50 pt-24 pb-20">
+  <div class="min-h-screen bg-gray-50 pt-24 pb-20 transition-colors duration-300">
     <div class="mx-auto max-w-7xl px-6">
       <div class="grid gap-12 lg:grid-cols-2">
         

@@ -4,7 +4,7 @@
     <HeroSlider />
 
     <!-- Why Us Section (Quick Intro) -->
-    <section class="bg-gray-50 py-20">
+    <section class="bg-gray-50 py-20 transition-colors duration-300">
       <div class="mx-auto max-w-7xl px-6">
         <div class="grid gap-12 md:grid-cols-2 items-center">
             <div data-aos="fade-right">
@@ -41,7 +41,7 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section class="mx-auto max-w-7xl px-6 py-24">
+    <section class="mx-auto max-w-7xl px-6 py-24 bg-white transition-colors duration-300">
       <div class="mb-16 text-center" data-aos="fade-up">
           <span class="mb-2 block text-sm font-bold uppercase tracking-wider text-blue-600">Our Portfolio</span>
           <h2 class="text-3xl font-bold text-gray-900 md:text-5xl">Recent Works</h2>

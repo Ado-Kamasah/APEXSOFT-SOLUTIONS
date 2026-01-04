@@ -13,7 +13,7 @@
     </div>
 
     <!-- Main Content -->
-    <section class="mx-auto max-w-7xl px-6 py-20">
+    <section class="mx-auto max-w-7xl px-6 py-20 bg-white transition-colors duration-300">
       <div class="grid items-center gap-16 md:grid-cols-2">
         <!-- Text Content -->
         <div data-aos="fade-right">
